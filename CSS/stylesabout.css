@@ -1,0 +1,336 @@
+body{
+    font-family: 'Tilt Warp', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Tilt Warp", cursive;
+}
+
+a:hover{
+    color: #b0b0b0;
+}
+
+p{
+    color: black;
+    font-family: "Tilt Warp", cursive;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid{
+    padding: 2% 15%;
+    
+}    
+
+/* Sections */
+
+.colored-section{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.black-section{
+    background-color: black;
+    padding: 3% 7%;
+}
+
+
+/* Headings */
+
+.big-heading{
+    font-family: 'Tilt Warp', cursive;
+    font-size: 2.65rem;
+    margin: 30px auto 0 auto;
+    padding-bottom: 20%;
+    white-space: nowrap;
+}
+
+.about-home-button{
+    position: relative;
+    right: 20px;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.section-link{
+    color: black;
+    font-family: 'Tilt Warp';
+    font-size: 25px;
+    text-decoration: none;
+    margin: 50px auto 0 auto;
+    padding: 0 80px;
+}
+
+/* Title Section */
+
+#title .container-fluid{
+    text-align: left;
+    padding: 3% 15%;
+}
+
+
+/* Title Image */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    background-color: #fafafa;
+  }
+  
+  .title-image {
+    width: 60%;
+  }
+
+/* Features Section */
+
+#features{
+     position: relative;
+     z-index: 1;
+}
+
+.feature-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-bottom: 5%;
+}
+
+.profile-pic-about {
+    max-width: 125%;
+    height: auto;
+    margin: 0 auto 0 0;
+    padding-top: 10px;
+}
+
+.about-description {
+    margin: 0 0 0 60px;
+    padding-left: 60px;
+    font-size: 1.2rem;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+}
+
+
+/* Animation Section */
+
+.marquee{
+    width: 80%;
+    background-color: white;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-top: 20px;
+    }
+
+    .marquee div{
+        font-size: 1.6rem;
+        font-family: 'Tilt Warp';
+        animation: animate-home 20s linear infinite;
+        padding-left: 130%;
+        display: inline-block;
+    }
+
+    @keyframes animate-home{
+        100%{
+        transform: translate(-100%, 0);
+        }
+    }
+
+
+/* Footer section */
+
+.footer-link{
+    font-family: 'Tilt Warp';
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 0;
+    margin: 5%;
+}
+
+.footer-copyrightname {
+    padding-top: 10px;
+    color: #fff;
+  }
+
+@media (max-width: 1028px) {
+
+    .colored-section {
+        text-align: left;
+        font-size: 10px;
+        height: auto;
+        position: relative;
+        display: inline-block;
+        padding: 0;
+    }
+  
+    .big-heading {
+          font-size: 30px;
+          padding: 0;
+          text-align: center;
+          margin: 0 0 0;
+    }
+  
+    .about-home-button {
+          justify-content: center;
+          padding: 0;
+          margin: 0 auto;
+          display: block;
+          width: 80px;
+          height: 80px;
+          text-align: left;
+          position: relative;
+          right: 65px;
+    }
+  
+    .marquee div {
+          display: none;
+    }
+  
+    .about-description {
+          padding-left: 0;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          margin: 0 0 0 0;
+          font-size: 18px;
+          box-sizing: border-box;
+    }
+  
+    .profile-pic-about {
+          max-width: 100%;
+          height: auto;
+    }
+  
+    .popeye-picture {
+          padding: 0;
+          margin: 0;
+          justify-content: center;
+    }
+  
+    .col-lg-6 {
+          padding: 0 0;
+          margin: 0;
+          justify-self: auto;
+          text-align: center;
+    }
+
+    .col-lg-4 {
+        padding: 0 0;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 845px) {
+
+    .colored-section {
+      text-align: left;
+      font-size: 10px;
+      height: auto;
+      position: relative;
+      display: inline-block;
+      padding: 0;
+    }
+
+    .big-heading {
+        font-size: 30px;
+        padding: 0;
+        text-align: center;
+        margin: 0 0 0;
+    }
+
+    .about-home-button {
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+        display: block;
+        width: 80px;
+        height: 80px;
+        text-align: left;
+        position: relative;
+        right: 65px;
+    }
+
+    .marquee div {
+        display: none;
+    }
+
+    .about-description {
+        padding-left: 0;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0 0 0 0;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+
+    .profile-pic-about {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .popeye-picture {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .col-lg-6 {
+        padding: 0 0;
+        margin: 0;
+        justify-self: auto;
+        text-align: center;
+    }
+
+    .footer-link{
+        font-size: 13px;
+        text-align: left;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .black-section {
+        text-align: left;
+        font-size: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        position: relative;
+    }
+
+    .container-fluid-footer {
+        padding: 0 0;
+    }
+
+    .footer-copyrightname {
+        font-size: 10px;
+    }
+}
